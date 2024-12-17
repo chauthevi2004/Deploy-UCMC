@@ -1,0 +1,201 @@
+MotChallenge2DBox
+val
+Traceback (most recent call last):
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 86, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 192, in eval_sequence
+    raw_data = dataset.get_raw_seq_data(tracker, seq)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\datasets\_base_dataset.py", line 92, in get_raw_seq_data
+    raw_gt_data, min_frame_gt, max_frame_gt = self._load_raw_file(tracker, seq, is_gt=True)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 232, in _load_raw_file
+    time_data = np.asarray(read_data[time_key], dtype=np.float)
+                                                      ^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\BoostTrack\bt_env\Lib\site-packages\numpy\__init__.py", line 410, in __getattr__
+    raise AttributeError(__former_attrs__[attr], name=None)
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+
+
+
+
+MotChallenge2DBox
+val
+Traceback (most recent call last):
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 86, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 196, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 363, in get_preprocessed_seq_data
+    to_remove_tracker = np.array([], np.int)
+                                     ^^^^^^
+  File "F:\Documents\CV++\BoostTrack\BoostTrack\bt_env\Lib\site-packages\numpy\__init__.py", line 410, in __getattr__
+    raise AttributeError(__former_attrs__[attr], name=None)
+AttributeError: module 'numpy' has no attribute 'int'.
+`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+
+
+
+
+MotChallenge2DBox
+val
+Traceback (most recent call last):
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 86, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 196, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 417, in get_preprocessed_seq_data
+    data['gt_ids'][t] = gt_id_map[data['gt_ids'][t]].astype(np.int)
+                                                            ^^^^^^
+  File "F:\Documents\CV++\BoostTrack\BoostTrack\bt_env\Lib\site-packages\numpy\__init__.py", line 410, in __getattr__
+    raise AttributeError(__former_attrs__[attr], name=None)
+AttributeError: module 'numpy' has no attribute 'int'.
+`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+
+
+
+
+MotChallenge2DBox
+val
+Traceback (most recent call last):
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 86, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 196, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 424, in get_preprocessed_seq_data
+    data['tracker_ids'][t] = tracker_id_map[data['tracker_ids'][t]].astype(np.int)
+                                                                           ^^^^^^
+  File "F:\Documents\CV++\BoostTrack\BoostTrack\bt_env\Lib\site-packages\numpy\__init__.py", line 410, in __getattr__
+    raise AttributeError(__former_attrs__[attr], name=None)
+AttributeError: module 'numpy' has no attribute 'int'.
+`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+
+
+
+
+MotChallenge2DBox
+val
+Traceback (most recent call last):
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 86, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 198, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\metrics\hota.py", line 31, in eval_sequence
+    res[field] = np.zeros((len(self.array_labels)), dtype=np.float)
+                                                          ^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\BoostTrack\bt_env\Lib\site-packages\numpy\__init__.py", line 410, in __getattr__
+    raise AttributeError(__former_attrs__[attr], name=None)
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+
+
+
+
+MotChallenge2DBox
+val
+Traceback (most recent call last):
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 86, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 198, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\metrics\hota.py", line 31, in eval_sequence
+    res[field] = np.zeros((len(self.array_labels)), dtype=np.float)
+                                                          ^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\BoostTrack\bt_env\Lib\site-packages\numpy\__init__.py", line 410, in __getattr__
+    raise AttributeError(__former_attrs__[attr], name=None)
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+
+
+
+
+
+MotChallenge2DBox
+val
+Traceback (most recent call last):
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 86, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\eval.py", line 198, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "F:\Documents\CV++\BoostTrack\UCMCTrack\eval\TrackEval\trackeval\metrics\identity.py", line 84, in eval_sequence
+    res['IDFP'] = fp_mat[match_rows, match_cols].sum().astype(nt)
+                                                              ^^
+NameError: name 'nt' is not defined
+
+
+
+
+
